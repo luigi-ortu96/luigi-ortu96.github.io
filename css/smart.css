@@ -1,0 +1,16 @@
+h1 {
+    font-size: 60px;
+    color: #903;
+}
+p {
+    font-size: 20px;
+    width: 170px;
+}
+span.dropcaps {
+    color: #903;
+    float: left;
+    font-family: Georgia;
+    font-size: 75px;
+    line-height: 60px;
+    padding: 4px, 8px, 0px, 3px;
+}
