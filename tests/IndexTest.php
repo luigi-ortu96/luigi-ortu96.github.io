@@ -14,34 +14,10 @@ class IndexTest extends DOMTestCase
         $this->html = file_get_contents('index.html');
     }
 
-    public function testTagContent()
-    {
-
-        $selector = 'h1.title';
-        $content  = 'Test title text';
-
-        $this->assertSelectEquals($selector, $content, true, $this->html);
-    }
-
-    public function testClassContent()
-    {
-        $selector = 'div.foo';
-        $content  = 'Test class text';
-
-        $this->assertSelectEquals($selector, $content, true, $this->html);
-    }
-
-    public function testCountList()
-    {
-        $selector = 'ul > li';
-        $count    = 2;
-        $this->assertSelectCount($selector, $count, $this->html);
-    }
-
     public function testRegExpContent()
     {
-        $selector = 'div.bar';
-        $regexp   = '/Pierro/';
+        $selector = 'h4.modal-title';
+        $regexp   = '/title/';
         $this->assertSelectRegExp($selector, $regexp, true, $this->html);
     }
 }
